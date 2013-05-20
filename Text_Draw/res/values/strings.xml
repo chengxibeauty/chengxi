@@ -1,0 +1,6 @@
+<resources>
+
+    <string name="app_name">写字板</string>
+    <string name="Antiaddiction">作答时间已到，系统将会3秒后自动交卷！</string>
+
+</resources>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/questionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/titlebg"
+            android:gravity="center"
+            android:text="写字板题目"
+            android:textColor="#000000"
+            android:textSize="22dp" />
+
+        <ImageButton
+            android:id="@+id/questionVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/question_visible" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp" >
+
+        <FrameLayout
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" >
+
+            <ImageView
+                android:id="@+id/colorvisble"
+                android:layout_width="400dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/seekbar_background" />
+
+            <SeekBar
+                android:id="@+id/myseek"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:max="400"
+                android:progress="380"
+                android:progressDrawable="@null"
+                android:thumb="@drawable/black_thumb" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/writeTools"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/clear"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/clear_btn" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="120dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/delete_btn" />
+
+            <ImageButton
+                android:id="@+id/sumbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/submit_answer_btn" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/seekBar"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/writeTools" >
+
+            <com.denglish.view.MyTextView
+                android:id="@+id/firstForVisble"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.denglish.view.PaintView
+                android:id="@+id/secondForVisble"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

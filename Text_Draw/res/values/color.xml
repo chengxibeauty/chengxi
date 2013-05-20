@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF9900</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="green">#06CE16</color>
+    <color name="blue">#158AFF</color>
+    <color name="purple">#A326FF</color>
+    <color name="black">#000000</color>
+<!-- 白、红、橙、黄、绿、蓝、紫、黑。 -->
+</resources>
